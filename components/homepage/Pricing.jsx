@@ -64,7 +64,7 @@ const Pricing = () => {
         version) into your website. We are compatible with all no-code platforms
         (Webflow, WordPress, and more!)
       </p>
-      <div className="space-y-4 py-9 flex flex-wrap justify-center items-center gap-5">
+      <div className=" py-9 flex flex-wrap justify-center items-center gap-5">
         {pricingData.map((plan, index) => (
           <div
             key={index}

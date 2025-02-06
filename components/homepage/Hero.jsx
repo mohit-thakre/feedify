@@ -2,6 +2,7 @@ import React from "react";
 import { BorderBeam } from "../ui/border-beam";
 import Features from "./Features";
 import Pricing from "./Pricing";
+import Partners from "./Partners";
 const avatars = [
   {
     imageUrl: "https://randomuser.me/api/portraits/men/1.jpg",
@@ -117,6 +118,7 @@ const Hero = () => {
           <BorderBeam size={250} duration={12} delay={9} />
         </div>
       </div>
+      <Partners />
       <Features />
       <Pricing />
     </div>
