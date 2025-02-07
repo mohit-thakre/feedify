@@ -3,6 +3,7 @@ import { BorderBeam } from "../ui/border-beam";
 import Features from "./Features";
 import Pricing from "./Pricing";
 import Partners from "./Partners";
+import Integration from "./Integration";
 const avatars = [
   {
     imageUrl: "https://randomuser.me/api/portraits/men/1.jpg",
@@ -119,6 +120,7 @@ const Hero = () => {
         </div>
       </div>
       <Partners />
+      <Integration />
       <Features />
       <Pricing />
     </div>
