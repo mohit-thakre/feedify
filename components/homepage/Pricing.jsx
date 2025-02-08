@@ -1,53 +1,6 @@
+import { pricingData } from "@/data/data";
 import React from "react";
 import { FiCheck, FiX } from "react-icons/fi";
-
-const pricingData = [
-  {
-    name: "Starter Pack",
-    price: "$0/mo",
-    description: "Best for individuals",
-    features: [
-      { text: "Up to 5 testimonials", included: true },
-      { text: "Email support", included: true },
-      { text: "Basic analytics", included: true },
-      { text: "Custom branding", included: false },
-      { text: "Priority support", included: false },
-      { text: "API access", included: false },
-    ],
-    buttonText: "Get started free",
-    buttonBg: "bg-black text-white border border-black/50",
-  },
-  {
-    name: "Pro Pack",
-    price: "$15/mo",
-    description: "Best for small businesses",
-    features: [
-      { text: "Up to 50 testimonials", included: true },
-      { text: "Priority email support", included: true },
-      { text: "Advanced analytics", included: true },
-      { text: "Custom branding", included: true },
-      { text: "Priority support", included: false },
-      { text: "API access", included: false },
-    ],
-    buttonText: "Get started",
-    buttonBg: "bg-[#3979da] hover:bg-[#315ea8] text-white",
-  },
-  {
-    name: "Enterprise Pack",
-    price: "$49/mo",
-    description: "Best for large teams",
-    features: [
-      { text: "Unlimited testimonials", included: true },
-      { text: "Dedicated support", included: true },
-      { text: "Comprehensive analytics", included: true },
-      { text: "Custom branding", included: true },
-      { text: "Priority support", included: true },
-      { text: "API access", included: true },
-    ],
-    buttonText: "Contact us",
-    buttonBg: "bg-[#3979da] hover:bg-[#315ea8] text-white",
-  },
-];
 
 const Pricing = () => {
   return (

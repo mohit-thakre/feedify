@@ -1,26 +1,24 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 const Navigation = () => {
-    const navLinks = [
-        {
-          title: "Features",
-          link: "/features"
-        },
-        {
-          title: "Integration",
-          link: "/integration"
-        },
-        {
-          title: "Pricing",
-          link: "/pricing"
-        }
-      ]
+  const navLinks = [
+    {
+      title: "Features",
+      link: "/features",
+    },
+    {
+      title: "Integration",
+      link: "/integration",
+    },
+    {
+      title: "Pricing",
+      link: "/pricing",
+    },
+  ];
   return (
     <div className="fixed top-8 left-0 right-0 max-w-6xl mx-auto z-50 bg-white/30 backdrop-blur-lg flex justify-between items-center px-12 py-3 border border-pure-greys-500 rounded-full">
-      <div className='font-bold text-3xl italic'>
-        FeedIFY
-      </div>
+      <div className="font-bold text-3xl italic">FeedIFY</div>
       <div className="flex space-x-6">
         {navLinks.map((item, idx) => (
           <Link
@@ -33,12 +31,12 @@ const Navigation = () => {
           </Link>
         ))}
       </div>
-      <button className="border text-sm font-medium relative bg-[#3979da] border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Get Started</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
+      <button className="border text-sm font-medium relative bg-[#3979da] text-white border-neutral-200 dark:border-white/[0.2]  dark:text-white px-4 py-2 rounded-full">
+        <span>Get Started</span>
+        <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

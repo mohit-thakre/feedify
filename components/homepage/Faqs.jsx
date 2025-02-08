@@ -1,36 +1,9 @@
 "use client";
+import { faqs } from "@/data/data";
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const Faqs = () => {
-  const faqs = [
-    {
-      question: "How do I collect testimonials from users?",
-      answer:
-        "Users can submit testimonials through a simple form shared via a link or embedded on your website.",
-    },
-    {
-      question: "Can I edit or manage submitted testimonials?",
-      answer:
-        "Yes, the admin dashboard allows you to approve, edit, or organize testimonials before displaying them.",
-    },
-    {
-      question: "How can I embed testimonials on my website?",
-      answer:
-        "You can use an iframe or JavaScript snippet to display testimonials dynamically.",
-    },
-    {
-      question: "Is it possible to customize the look of the testimonials?",
-      answer:
-        "Yes, you can customize fonts, colors, and layouts to match your brand.",
-    },
-    {
-      question: "How secure is the testimonial data?",
-      answer:
-        "All testimonials are securely stored with encryption, ensuring data protection and compliance.",
-    },
-  ];
-
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (

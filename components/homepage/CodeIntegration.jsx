@@ -1,28 +1,14 @@
 "use client";
+import { jsCode, iframeCode } from "@/data/data";
 import { useState } from "react";
 
 import GitHubButton from "react-github-btn";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialOceanic } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import {
-  materialDark,
-  materialLight,
-} from "react-syntax-highlighter/dist/esm/styles/prism";
+
 const CodeIntegration = () => {
   const [active, setActive] = useState("javascript");
-  const iframeCode = `
-  <script src="https://feedify.com/embed-testimonials.js"></script>
-  <iframe src="https://feedify.com/testimonials.html"
-    width="100%" height="200">
-  </iframe>`;
 
-  const jsCode = `
-  (async function () {
-    const response = await fetch("https://feedify.com/api/testimonials");
-    const testimonials = await response.json();
-    
-    console.log(testimonials);
-  })();`;
   return (
     <div className="w-full h-full py-20">
       <button className="text-sm font-medium relative border border-black/[0.2] text-black dark:text-white px-4 py-1 rounded-full">
@@ -38,7 +24,6 @@ const CodeIntegration = () => {
         platform!
       </p>
 
-      {/* Code Display Box */}
       <div className=" py-10">
         <div
           className="max-w-3xl min-h-[200px] border-2 rounded-xl mx-auto p-2 "

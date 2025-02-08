@@ -1,32 +1,7 @@
+import { TimeLine } from "@/data/data";
 import React from "react";
-import { Fa500Px, FaAccessibleIcon } from "react-icons/fa";
-import { IoIosCreate } from "react-icons/io";
-import { MdManageSearch, MdOutlineCollectionsBookmark } from "react-icons/md";
-import { PiSlideshowDuotone } from "react-icons/pi";
-const Process = () => {
-  const TimeLine = [
-    {
-      Logo: <IoIosCreate />,
-      Heading: "Create",
-      Description: "Fully committed to the success company",
-    },
-    {
-      Logo: <MdOutlineCollectionsBookmark />,
-      Heading: "Share",
-      Description: "Students will always be our top priority",
-    },
-    {
-      Logo: <MdManageSearch />,
-      Heading: "Manage",
-      Description: "The ability to switch is an important skills",
-    },
-    {
-      Logo: <PiSlideshowDuotone />,
-      Heading: "Showcase",
-      Description: "Code your way to a solution",
-    },
-  ];
 
+const Process = () => {
   return (
     <div className="w-full h-full py-20 text-center">
       <button className="text-sm font-medium relative border border-black/20 text-black dark:text-white px-4 py-1 rounded-full">

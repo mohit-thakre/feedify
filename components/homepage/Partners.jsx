@@ -1,22 +1,6 @@
 import React from "react";
-import Google from "@/assets/logos/Google.svg";
-import Microsoft from "@/assets/logos/Microsoft.svg";
-import Amazon from "@/assets/logos/Amazon.svg";
-import Netflix from "@/assets/logos/Netflix.svg";
-import Instagram from "@/assets/logos/Instagram.svg";
-import Uber from "@/assets/logos/Uber.svg";
-import Spotify from "@/assets/logos/Spotify.svg";
 import Image from "next/image";
-
-const companyLogos = [
-  { name: "Google", src: Google },
-  { name: "Microsoft", src: Microsoft },
-  { name: "Amazon", src: Amazon },
-  { name: "Netflix", src: Netflix },
-  { name: "Instagram", src: Instagram },
-  { name: "Uber", src: Uber },
-  { name: "Spotify", src: Spotify },
-];
+import { companyLogos } from "@/data/data";
 
 const Partners = () => {
   return (

@@ -1,56 +1,8 @@
+import { logos } from "@/data/data";
 import React from "react";
 import { BsPatchCheck } from "react-icons/bs";
-import {
-  SiFramer,
-  SiWebflow,
-  SiWix,
-  SiSquarespace,
-  SiShopify,
-  SiWordpress,
-} from "react-icons/si";
 
 const Integration = () => {
-  const logos = [
-    {
-      logo: <SiFramer />,
-      name: "Framer",
-      description: "A responsive design tool for building websites quickly.",
-      color: "text-blue-300",
-    },
-    {
-      logo: <SiWordpress />,
-      name: "WordPress",
-      description:
-        "A popular content management system for blogs and websites.",
-      color: "text-orange-600",
-    },
-    {
-      logo: <SiWebflow />,
-      name: "Webflow",
-      description: "A web design tool that allows for visual development.",
-      color: "text-green-500",
-    },
-    {
-      logo: <SiWix />,
-      name: "Wix",
-      description: "A cloud-based website builder with drag-and-drop features.",
-      color: "text-blue-500",
-    },
-    {
-      logo: <SiSquarespace />,
-      name: "Squarespace",
-      description:
-        "A platform for building beautiful websites and online stores.",
-      color: "text-gray-800",
-    },
-    {
-      logo: <SiShopify />,
-      name: "Shopify",
-      description:
-        "An e-commerce platform for online stores and retail point-of-sale.",
-      color: "text-green-600",
-    },
-  ];
   return (
     <div className="w-full h-full py-20 text-center">
       <button className="text-sm font-medium relative border border-black/20 text-black dark:text-white px-4 py-1 rounded-full">

@@ -8,33 +8,7 @@ import CodeIntegration from "./CodeIntegration";
 import Process from "./Process";
 import Faqs from "./Faqs";
 import Footer from "../Footer";
-const avatars = [
-  {
-    imageUrl: "https://randomuser.me/api/portraits/men/1.jpg",
-    profileUrl: "https://fakeurl.com/user1",
-  },
-  {
-    imageUrl: "https://randomuser.me/api/portraits/women/2.jpg",
-    profileUrl: "https://fakeurl.com/user2",
-  },
-  {
-    imageUrl: "https://randomuser.me/api/portraits/men/3.jpg",
-    profileUrl: "https://fakeurl.com/user3",
-  },
-  {
-    imageUrl: "https://randomuser.me/api/portraits/women/4.jpg",
-    profileUrl: "https://fakeurl.com/user4",
-  },
-  {
-    imageUrl: "https://randomuser.me/api/portraits/men/5.jpg",
-    profileUrl: "https://fakeurl.com/user5",
-  },
-  {
-    imageUrl: "https://randomuser.me/api/portraits/women/6.jpg",
-    profileUrl: "https://fakeurl.com/user6",
-  },
-];
-
+import { avatars } from "@/data/data";
 const Hero = () => {
   return (
     <div className=" text-center flex flex-col w-full h-full items-center justify-center pt-14">
@@ -123,13 +97,21 @@ const Hero = () => {
           <BorderBeam size={250} duration={12} delay={9} />
         </div>
       </div>
+      {/* RENDERING PARTNERS COMPONENT */}
       <Partners />
+      {/* RENDERING INTEGRATION COMPONENT */}
       <Integration />
+      {/* RENDERING CODE INTEGRATION COMPONENT */}
       <CodeIntegration />
+      {/* RENDERING FEATURES COMPONENT */}
       <Features />
+      {/* RENDERING PRICING COMPONENT */}
       <Pricing />
+      {/* RENDERING PROCESS COMPONENT */}
       <Process />
+      {/* RENDERING FAQS COMPONENT */}
       <Faqs />
+      {/* RENDERING FOOTER COMPONENT */}
       <Footer />
     </div>
   );
