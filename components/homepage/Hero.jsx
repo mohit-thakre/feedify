@@ -6,6 +6,7 @@ import Partners from "./Partners";
 import Integration from "./Integration";
 import CodeIntegration from "./CodeIntegration";
 import Process from "./Process";
+import Faqs from "./Faqs";
 const avatars = [
   {
     imageUrl: "https://randomuser.me/api/portraits/men/1.jpg",
@@ -127,6 +128,7 @@ const Hero = () => {
       <Features />
       <Pricing />
       <Process />
+      <Faqs />
     </div>
   );
 };
