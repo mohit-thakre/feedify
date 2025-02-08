@@ -101,7 +101,7 @@ const Features = () => {
             <div
               style={{ borderRadius: "12px" }}
               className="  bg-white   shadow-xl rounded-2xl p-6 w-80 flex flex-col items-center text-center   h-96
-         backdrop-blur-lg bg-opacity-80 transition-transform transform hover:-translate-y-2 hover:shadow-2xl duration-300"
+         backdrop-blur-lg bg-opacity-80 transition-transform transform  hover:shadow-2xl duration-300"
             >
               {/* Icon Section */}
               <div className="icon  p-4 rounded-full flex items-center justify-center shadow-md">
