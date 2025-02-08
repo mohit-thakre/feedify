@@ -91,7 +91,7 @@ const Features = () => {
         version) into your website. We are compatible with all no-code platforms
         (Webflow, WordPress, and more!)
       </p>
-      <div className=" flex flex-wrap justify-center items-center gap-5 w-full h-auto py-20 ">
+      <div className=" flex flex-wrap justify-center items-center gap-5 w-full h-auto py-10  ">
         {featuresData.map((feature) => (
           <div
             key={feature.id}

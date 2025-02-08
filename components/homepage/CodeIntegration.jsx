@@ -39,69 +39,71 @@ const CodeIntegration = () => {
       </p>
 
       {/* Code Display Box */}
-      <div
-        className="max-w-3xl min-h-[200px] border-2 rounded-xl mx-auto p-2 "
-        style={{ borderRadius: "20px" }}
-      >
+      <div className=" py-10">
         <div
-          style={{ borderRadius: "12px" }}
-          className="  backdrop-blur-lg bg-opacity-80 shadow-xl"
+          className="max-w-3xl min-h-[200px] border-2 rounded-xl mx-auto p-2 "
+          style={{ borderRadius: "20px" }}
         >
-          <div className="w-full h-14 border-b-2 flex justify-between items-center px-4 gap-2 font-mono">
-            <div className="flex gap-2">
-              <button
-                className={`px-4 py-1 ${
-                  active === "javascript"
-                    ? "bg-[#3979da] text-white"
-                    : "bg-gray-200"
-                } rounded-md border-2`}
-                onClick={() => setActive("javascript")}
-              >
-                JavaScript
-              </button>
-              <button
-                className={`px-4 py-1 ${
-                  active === "iframe"
-                    ? "bg-[#3979da] text-white"
-                    : "bg-gray-200"
-                } rounded-md border-2 `}
-                onClick={() => setActive("iframe")}
-              >
-                Iframe
-              </button>
+          <div
+            style={{ borderRadius: "12px" }}
+            className="  backdrop-blur-lg bg-opacity-80 shadow-xl"
+          >
+            <div className="w-full h-14 border-b-2 flex justify-between items-center px-4 gap-2 font-mono">
+              <div className="flex gap-2">
+                <button
+                  className={`px-4 py-1 ${
+                    active === "javascript"
+                      ? "bg-[#3979da] text-white"
+                      : "bg-gray-200"
+                  } rounded-md border-2`}
+                  onClick={() => setActive("javascript")}
+                >
+                  JavaScript
+                </button>
+                <button
+                  className={`px-4 py-1 ${
+                    active === "iframe"
+                      ? "bg-[#3979da] text-white"
+                      : "bg-gray-200"
+                  } rounded-md border-2 `}
+                  onClick={() => setActive("iframe")}
+                >
+                  Iframe
+                </button>
+              </div>
+              <div className=" flex gap-2">
+                <GitHubButton
+                  href="https://github.com/d/github-buttons"
+                  data-color-scheme="no-preference: light; light: light; dark: dark;"
+                  data-icon="octicon-star"
+                  data-size="large"
+                  aria-label="Star buttons/github-buttons on GitHub"
+                >
+                  Star
+                </GitHubButton>
+                <GitHubButton
+                  href="https://github.com/d/github-buttons/fork"
+                  data-color-scheme="no-preference: light; light: light; dark: dark;"
+                  data-icon="octicon-repo-forked"
+                  data-size="large"
+                  aria-label="Fork buttons/github-buttons on GitHub"
+                >
+                  Fork
+                </GitHubButton>
+              </div>
             </div>
-            <div className=" flex gap-2">
-              <GitHubButton
-                href="https://github.com/d/github-buttons"
-                data-color-scheme="no-preference: light; light: light; dark: dark;"
-                data-icon="octicon-star"
-                data-size="large"
-                aria-label="Star buttons/github-buttons on GitHub"
-              >
-                Star
-              </GitHubButton>
-              <GitHubButton
-                href="https://github.com/d/github-buttons/fork"
-                data-color-scheme="no-preference: light; light: light; dark: dark;"
-                data-icon="octicon-repo-forked"
-                data-size="large"
-                aria-label="Fork buttons/github-buttons on GitHub"
-              >
-                Fork
-              </GitHubButton>
-            </div>
-          </div>
 
-          <div className="p-3 bg-gray-50 rounded-b-xl">
-            <div className="text-zinc-900 overflow-hidden bg-gray-100 p-4 rounded-lg text-left">
-              <SyntaxHighlighter
-                language={active === "iframe" ? "html" : "javascript"}
-                style={materialOceanic}
-                // showLineNumbers={true}
-                customStyle={{ borderRadius: "0.375rem" }}
-              >
-                {active === "iframe" ? iframeCode : jsCode}
-              </SyntaxHighlighter>
+            <div className="p-3 bg-gray-50 rounded-b-xl">
+              <div className="text-zinc-900 overflow-hidden bg-gray-100 p-4 rounded-lg text-left">
+                <SyntaxHighlighter
+                  language={active === "iframe" ? "html" : "javascript"}
+                  style={materialOceanic}
+                  // showLineNumbers={true}
+                  customStyle={{ borderRadius: "0.375rem" }}
+                >
+                  {active === "iframe" ? iframeCode : jsCode}
+                </SyntaxHighlighter>
+              </div>
             </div>
           </div>
         </div>
